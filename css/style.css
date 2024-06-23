@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+}
+
+.controls, .actions {
+    margin: 20px 0;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.player {
+    background-color: #444444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+    position: relative;
+}
+
+.player h2 {
+    margin: 0;
+}
+
+.chip-count {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #555555;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777777;
+}
+
+.hidden {
+    display: none;
+}
+
+.current-player {
+    border: 2px solid yellow;
+}
+
+.folded {
+    opacity: 0.5;
+}
+
+#winner {
+    font-size: 2em;
+    color: #00ff00;
+}

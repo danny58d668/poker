@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Hold'em Chip Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Texas Hold'em Chip Manager</h1>
+        <div class="controls">
+            <input type="number" id="playerCount" placeholder="Number of Players (min 3)" value="5">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="gameArea" class="hidden">
+            <h2>Current Round: <span id="currentRound">Pre-Flop</span></h2>
+            <h2>Prize Pool: <span id="prizePool">0</span></h2>
+            <div class="players" id="players"></div>
+            <div class="actions" id="roundActions">
+                <button onclick="placeBlindBets()">Place Blind Bets</button>
+                <button onclick="nextRound()">Next Round (Pre-Flop)</button>
+                <button onclick="resetGame()">Reset Game</button>
+            </div>
+            <h2 id="winner" class="hidden"></h2>
+        </div>
+    </div>
+    <script src="js/client.js"></script>
+</body>
+</html>
